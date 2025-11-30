@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+# Script that changes localhost and facebook.com resolutions
+
+# Replace localhost line to force 127.0.0.2
+sudo sed -i 's/127\.0\.0\.1[[:space:]]\+localhost/127.0.0.2 localhost/' /etc/hosts
+
+# Add or replace facebook.com to resolve to 8.8.8.8
+sudo sed -i '/facebook.com/d' /etc/hosts
+echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts > /dev/null
