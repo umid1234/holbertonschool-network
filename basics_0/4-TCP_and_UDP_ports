@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Script to display listening TCP and UDP ports with PID and program name
 
 echo "Active Internet connections (only servers)"
