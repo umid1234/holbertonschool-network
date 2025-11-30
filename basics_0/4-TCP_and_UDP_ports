@@ -1,14 +1,4 @@
 #!/usr/bin/env bash
-# Script to display listening TCP and UDP ports with PID and program name
+# This script displays listening TCP and UDP ports with their associated PIDs and program names
 
-echo "Active Internet connections (only servers)"
-
-# Use netstat to show listening sockets with PID and program name
-# Options:
-# -l: show only listening sockets
-# -p: show PID/program name
-# -t: TCP
-# -u: UDP
-# -n: numeric (don't resolve names)
-
-sudo netstat -lptun
+netstat -lp
