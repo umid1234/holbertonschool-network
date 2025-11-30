@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # Script that changes localhost and facebook.com resolutions
 
 # Replace localhost line to force 127.0.0.2
